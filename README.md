@@ -24,7 +24,6 @@ Mount all these volumes to your host.
 
 | Directory inside container | Description |
 | --- | --- |
-| `/home/steam/game/ShooterGame/Saved/Config/LinuxServer` | Contains all save data |
 | `/home/steam/game` | Contains the game files |
 
 ### Configuration
@@ -35,7 +34,7 @@ Configure by setting environment variables. See below for an explanation of all 
 | --- | --- |
 | `MAP` | [Name of the map](https://ark.wiki.gg/wiki/Server_configuration#Map_names) that you want to host. |
 
-On your first launch the game will generate configuration files in your configuration directory.
+On your first launch the game will generate configuration files in within your game directory.
 
 
 ### Updating the game files
