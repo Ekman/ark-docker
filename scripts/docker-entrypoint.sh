@@ -7,4 +7,4 @@ gosu "$USER" "$STEAMCMDDIR/steamcmd.sh" \
     validate \
     +quit
 
-gosu "$USER" "$GAME_DIR/ShooterGameServer" "$MAP?listen" -crossplay
+gosu "$USER" "$GAME_DIR/ShooterGame/Binaries/Linux/ShooterGameServer" "$MAP?listen" -crossplay
