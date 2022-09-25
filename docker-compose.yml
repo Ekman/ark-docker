@@ -1,0 +1,12 @@
+version: "3"
+services:
+  ark:
+    image: ghcr.io/ekman/ark:0.0.1
+    build:
+      context: .
+    restart: unless-stopped
+    read_only: true
+    volumes: [ "./game:/home/steam/game" ]
+    expose:
+      - 27015:27015/udp
+      - 7777-7778:7777-7778/udp
