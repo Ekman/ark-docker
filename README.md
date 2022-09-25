@@ -35,6 +35,8 @@ Configure by setting environment variables. See below for an explanation of all 
 | --- | --- |
 | `MAP` | [Name of the map](https://ark.wiki.gg/wiki/Server_configuration#Map_names) that you want to host. |
 
+On your first launch the game will generate configuration files in your configuration directory.
+
 
 ### Updating the game files
 
