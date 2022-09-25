@@ -1,6 +1,6 @@
 # Ark Docker
 
-Run a [Ark](https://store.steampowered.com/app/892970/Ark/) dedicated server using Docker. There are plenty of other solutions out there that has way more features than this. I wanted a bare minimum setup.
+Run a [Ark](https://store.steampowered.com/app/346110/Ark/) dedicated server using Docker. There are plenty of other solutions out there that has way more features than this. I wanted a bare minimum setup.
 
 ## Installation
 
@@ -16,7 +16,7 @@ View the [example `docker-compose.yml` file](docker-compose.yml) for indications
 
 ### Ports
 
-Open UDP and TCP ports `8766`, `27015` and `27016` on your router and forward them to the hosting server/computer.
+Open UDP ports `7777`, `7778` and `27015` on your router and forward them to the hosting server/computer.
 
 ### Volumes
 
@@ -24,7 +24,7 @@ Mount all these volumes to your host.
 
 | Directory inside container | Description |
 | --- | --- |
-| `/home/steam/config` | Contains all save data |
+| `/home/steam/game/ShooterGame/Saved/Config/LinuxServer` | Contains all save data |
 | `/home/steam/game` | Contains the game files |
 
 ### Configuration
@@ -33,11 +33,7 @@ Configure by setting environment variables. See below for an explanation of all 
 
 | Name | Description |
 | --- | --- |
-| `NAME` | Name appears in the server browser |
-| `WORLD` | The save files will be named after this |
-| `PORT` | Recommended leaving as default |
-| `PASSWORD` | Users must enter this password to enter your server |
-| `PUBLIC` | Should be `1` or `0`. If `1` then the server will appear in the server browser |
+| `MAP` | [Name of the map](https://ark.wiki.gg/wiki/Server_configuration#Map_names) that you want to host. |
 
 
 ### Updating the game files
